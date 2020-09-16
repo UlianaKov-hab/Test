@@ -21,3 +21,30 @@ void main()
 	cout << a << endl;
  
 }
+11111111111111111111111111111111111111111111111
+#include<iostream>
+ 
+using namespace std;
+int Sum(int a, int b)
+{
+	return a + b;
+}
+ 
+void Fill(int* a, int* b)
+{
+	cin >> (*a) >> (*b);
+}
+ 
+void Fill(int a, int b)
+{
+	cin >> (a) >> (b);
+}
+ 
+void main()
+{
+	int a = 0;
+	int b = 0;
+	Fill(a, b);
+	cout << "a=" << a << endl << "b=" << b << endl;
+	cout << "Sum=" << Sum(a, b) << endl;
+}
