@@ -1,0 +1,23 @@
+#include<iostream>
+ 
+using namespace std;
+ 
+ 
+void Func(int* a, int* b)
+{
+	*a *= 2;
+	*b *= 2;
+	cout << *a << endl;
+}
+ 
+void main()
+{
+	int a = 10;
+	int b = 5;
+ 
+ 
+	cout << a << endl;
+	Func(&a, &b);
+	cout << a << endl;
+ 
+}
